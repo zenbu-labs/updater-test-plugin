@@ -1,0 +1,18 @@
+{
+  "name": "updater-test-plugin",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "peerDependencies": {
+    "@zenbujs/core": "*"
+  },
+  "devDependencies": {
+    "@zenbujs/core": "^0.2.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.4.5"
+  },
+  "packageManager": "pnpm@10.13.1"
+}

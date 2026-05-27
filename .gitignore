@@ -1,0 +1,5 @@
+node_modules
+dist
+.zenbu
+*.log
+.DS_Store
