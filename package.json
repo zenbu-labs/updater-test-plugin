@@ -10,9 +10,12 @@
     "@zenbujs/core": "*"
   },
   "devDependencies": {
-    "@zenbujs/core": "^0.2.0",
     "@types/node": "^22.0.0",
+    "@zenbujs/core": "^0.2.0",
     "typescript": "^5.4.5"
   },
-  "packageManager": "pnpm@10.13.1"
+  "packageManager": "pnpm@10.13.1",
+  "dependencies": {
+    "picocolors": "^1.1.1"
+  }
 }
