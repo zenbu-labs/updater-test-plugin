@@ -1,3 +1,4 @@
+import ms from "ms"
 import pc from "picocolors"
 
 import { Service } from "@zenbujs/core/runtime"
@@ -7,7 +8,7 @@ import { Service } from "@zenbujs/core/runtime"
  * bump the version string below so we can confirm at runtime which revision
  * is actually loaded after an apply + relaunch.
  */
-export const PLUGIN_VERSION = "v3"
+export const PLUGIN_VERSION = "v4"
 
 export class UpdaterTestService extends Service.create({
   key: "updaterTest",
@@ -18,7 +19,10 @@ export class UpdaterTestService extends Service.create({
     // eslint-disable-next-line no-console
     console.log(
       pc.green(
-        `[updater-test-plugin] running ${PLUGIN_VERSION} (git-only bump, no deps)`,
+        `[updater-test-plugin] running ${PLUGIN_VERSION} (uptime ${ms(
+          Math.floor(process.uptime() * 1000),
+          { long: true },
+        )})`,
       ),
     )
   }
