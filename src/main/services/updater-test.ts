@@ -5,14 +5,14 @@ import { Service } from "@zenbujs/core/runtime"
  * bump the version string below so we can confirm at runtime which revision
  * is actually loaded after an apply + relaunch.
  */
-export const PLUGIN_VERSION = "v0"
+export const PLUGIN_VERSION = "v1"
 
 export class UpdaterTestService extends Service.create({
   key: "updaterTest",
 }) {
   evaluate() {
     // eslint-disable-next-line no-console
-    console.log(`[updater-test-plugin] running ${PLUGIN_VERSION}`)
+    console.log(`[updater-test-plugin] running ${PLUGIN_VERSION} (bumped via auto-updater)`)
   }
 
   version(): string {
