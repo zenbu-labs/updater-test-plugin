@@ -7,7 +7,7 @@ import { Service } from "@zenbujs/core/runtime"
  * bump the version string below so we can confirm at runtime which revision
  * is actually loaded after an apply + relaunch.
  */
-export const PLUGIN_VERSION = "v2"
+export const PLUGIN_VERSION = "v3"
 
 export class UpdaterTestService extends Service.create({
   key: "updaterTest",
@@ -18,7 +18,7 @@ export class UpdaterTestService extends Service.create({
     // eslint-disable-next-line no-console
     console.log(
       pc.green(
-        `[updater-test-plugin] running ${PLUGIN_VERSION} (deps installed via auto-updater)`,
+        `[updater-test-plugin] running ${PLUGIN_VERSION} (git-only bump, no deps)`,
       ),
     )
   }
