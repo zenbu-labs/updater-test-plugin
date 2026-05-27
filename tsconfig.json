@@ -8,7 +8,13 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "noEmit": true,
-    "types": ["node"]
+    "types": [
+      "node"
+    ]
   },
-  "include": ["src", "zenbu.plugin.ts"]
+  "include": [
+    "src",
+    "zenbu.plugin.ts",
+    "./.zenbu/types/zenbu-register.ts"
+  ]
 }
