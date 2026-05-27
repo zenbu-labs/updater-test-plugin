@@ -8,7 +8,7 @@ import { Service } from "@zenbujs/core/runtime"
  * bump the version string below so we can confirm at runtime which revision
  * is actually loaded after an apply + relaunch.
  */
-export const PLUGIN_VERSION = "v4"
+export const PLUGIN_VERSION = "v5"
 
 export class UpdaterTestService extends Service.create({
   key: "updaterTest",
